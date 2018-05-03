@@ -1,0 +1,23 @@
+package com.example.krishn.assertsfile;
+
+import org.junit.Test;
+
+import static org.junit.Assert.assertNotEquals;
+
+
+public class check {
+    public int fact(int a){
+        int i,fact1=1;
+        for(i=1;i<=a;i++){
+            fact1=fact1*i;
+        }
+        return fact1;
+    }
+
+    @Test
+    public void call()
+    {
+
+        assertNotEquals(110,fact(5));
+    }
+}
